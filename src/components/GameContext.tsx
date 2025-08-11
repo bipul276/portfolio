@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import type{  ReactNode } from 'react';
-import { Trophy, Star, Zap, Code, Target, Brain, Award, Coffee, GitBranch, Sparkles, Lock, Briefcase, Network, Download } from 'lucide-react';
+import { Trophy,  Zap, Code, Target, Brain,  Coffee, GitBranch, Sparkles, Briefcase, Network, Download } from 'lucide-react';
 
 // --- INTERFACES ---
 interface Achievement {
@@ -74,7 +74,8 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
   });
   const [achievements, setAchievements] = useState<Achievement[]>(initialAchievements);
   const [showAchievement, setShowAchievement] = useState<Achievement | null>(null);
-  const [visitedSections, setVisitedSections] = useState<Set<string>>(new Set());
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_visitedSections, setVisitedSections] = useState<Set<string>>(new Set());
 
   // On mount, unlock first achievement and load best time
   useEffect(() => {

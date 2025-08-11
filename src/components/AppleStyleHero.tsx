@@ -39,19 +39,8 @@ export function AppleStyleHero({ onScrollToSection }: AppleStyleHeroProps) {
   const springConfig = { stiffness: 100, damping: 30, restDelta: 0.001 };
   const y = useSpring(useTransform(scrollYProgress, [0, 1], [0, -200]), springConfig);
   const opacity = useSpring(useTransform(scrollYProgress, [0, 0.5], [1, 0]), springConfig);
-  const scale = useSpring(useTransform(scrollYProgress, [0, 0.5], [1, 0.8]), springConfig);
-
-  // Text reveal animations
-  const titleY = useSpring(useTransform(scrollYProgress, [0, 0.3], [0, -100]), springConfig);
-  const titleOpacity = useSpring(useTransform(scrollYProgress, [0, 0.2], [1, 0]), springConfig);
   
-  const subtitleY = useSpring(useTransform(scrollYProgress, [0, 0.4], [0, -80]), springConfig);
-  const subtitleOpacity = useSpring(useTransform(scrollYProgress, [0.1, 0.3], [1, 0]), springConfig);
   
-  // Profile image animations
-  const profileScale = useSpring(useTransform(scrollYProgress, [0, 0.4], [1, 1.2]), springConfig);
-  const profileY = useSpring(useTransform(scrollYProgress, [0, 0.5], [0, -150]), springConfig);
-  const profileOpacity = useSpring(useTransform(scrollYProgress, [0.2, 0.4], [1, 0]), springConfig);
 
   // --- SIMPLIFIED BUTTON ANIMATIONS ---
   // The buttons are now part of the main content that fades out.

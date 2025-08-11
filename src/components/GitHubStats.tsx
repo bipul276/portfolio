@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Progress } from './ui/progress';
 import { Badge } from './ui/badge';
 import { motion } from 'framer-motion';
-import { Github, GitBranch, Star, Users, Calendar, TrendingUp } from 'lucide-react';
+import { Github, GitBranch, Star, Users,  TrendingUp } from 'lucide-react';
 import { useGame } from './GameContext';
 
 // The interface remains the same
@@ -282,7 +282,7 @@ export function GitHubStats({ username }: { username: string }) {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-53 gap-1 overflow-x-auto pb-2">
-              {data.activity.map((day, index) => (
+              {data.activity.map((day) => (
                 <div
                   key={day.day}
                   className={`w-3 h-3 rounded-sm ${getContributionColor(day.contributions)}`}
