@@ -187,7 +187,7 @@ function AppContent() {
                         >
                             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">I'm a passionate full-stack developer with a Computer Science degree and hands-on experience in modern web technologies. My journey in software development has been driven by curiosity and a desire to solve real-world problems through elegant code.</p>
                             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">I specialize in React, Node.js, and cloud technologies, with a strong focus on creating scalable, maintainable applications. I'm particularly interested in developer experience, performance optimization, and emerging technologies like AI/ML integration.</p>
-                            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">When I'm not coding, you'll find me contributing to open source projects, writing technical articles, or exploring new frameworks and tools that push the boundaries of web development.</p>
+                            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">When I'm not coding, you'll find me contributing to open source projects or exploring new frameworks and tools that push the boundaries of web development.</p>
                             <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-6">
                                 <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Mohali, India</div>
                                 <div className="flex items-center gap-2"><Calendar className="h-4 w-4" /> Available for hire</div>
